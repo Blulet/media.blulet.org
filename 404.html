@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="icon" href="https://media.blulet.org/default/logo.png" />
+
+    <meta property="og:image" content="https://media.blulet.org/default/logo.png" />
+    <meta name="theme-color" content="#000050" />
+    <meta name="description"
+        content="The newest and greatest Blooket Private Server written with TypeScript and React." />
+    <meta name="keywords" content="Blooket, Blulet, monkxy, zastix, private server, blooket private server" />
+
+    <title>Media | Blulet</title>
+</head>
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Titan+One&display=swap");
+
+    .body {
+        width: 100%;
+        min-height: 100vh;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .header {
+        background-color: #000050;
+        width: 100%;
+        height: 55px;
+        padding-bottom: 6px;
+        box-shadow: inset 0 -6px rgba(0, 0, 0, .2);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        z-index: 10;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .bluletText {
+        font-family: "Titan One", sans-serif;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        text-decoration: none;
+        color: #fff;
+        line-height: 49px;
+        outline: none;
+        font-size: 40px;
+        text-align: left;
+        margin-left: 40px;
+    }
+
+    .regularBody {
+        height: calc(100% - 55px);
+        top: 55px;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 520px;
+        background-color: #000050;
+        box-shadow: inset 0 -7px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.15);
+        border-radius: 7px;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 320px;
+        }
+    }
+
+    .containerHeader {
+        text-align: center;
+        font-size: 200px;
+        margin: 0 20px;
+        font-family: Titan One, sans-serif;
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .containerHeader {
+            font-size: 130px;
+        }
+    }
+
+    .errorBlue {
+        height: 160px;
+        margin: auto 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .errorBlue {
+            height: 100px;
+        }
+    }
+
+    .blueContainer {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        outline: none;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .containerText {
+        text-align: center;
+        font-size: 24px;
+        margin: 10px 30px 20px;
+        font-family: "Nunito", sans-serif;
+        color: #fff;
+    }
+
+
+    .background {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: #000060;
+        overflow: hidden;
+        z-index: -2;
+    }
+
+    .bluesBackground {
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        top: 50%;
+        left: 50%;
+        background-size: 550px;
+        background-position: -100px -100px;
+        background-image: url("https://media.blulet.org/default/background.png");
+        opacity: 0.075;
+        transform: translate(-50%, -50%) rotate(15deg);
+    }
+</style>
+
+<body>
+    <div id="root">
+        <div class="body">
+            <div class="background">
+                <div class="bluesBackground"></div>
+            </div>
+            <div class="header">
+                <div class="bluletText">Blulet</div>
+            </div>
+            <div class="regularBody">
+                <div class="container">
+                    <div class="containerHeader">
+                        4
+                        <div class="blueContainer errorBlue">
+                            <img class="errorBlue" src="https://media.blulet.org/blues/monkxy.svg" />
+                        </div>
+                        4
+                    </div>
+                    <div class="containerText">Not Found</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
